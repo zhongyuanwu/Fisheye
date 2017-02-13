@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.MallWareListActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/include_action_bar_2" />
+
+    <com.iyuile.pulltorefreshanimlibrary.PullToRefreshGridView
+        android:id="@+id/list_view"
+        style="@style/list_and_grid_custom_style"
+        android:layout_below="@id/actionbar"
+        android:numColumns="3"
+        custom:ptrShowText="true" />
+
+    <com.iyuile.caelum.view.ListView2FooterView
+        android:id="@+id/fv_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

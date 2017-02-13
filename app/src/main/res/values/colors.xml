@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorStatusBar">#ffffff</color>
+    <color name="colorAccent">@color/theme_blue_light_1</color>
+
+    <color name="theme_gray_light">#f7f7f7</color>
+    <color name="theme_gray">#e1e1e1</color>
+    <color name="theme_gray_deep">#bdbdbd</color>
+
+    <color name="theme_black_light">#9b9c9d</color>
+    <color name="theme_black">#494a4e</color>
+    <color name="theme_black_deep">#3c3c3d</color>
+
+    <color name="theme_yellow_light">#ffd55e</color>
+    <color name="theme_yellow">#ffbd00</color>
+    <color name="theme_yellow_deep">#e2a700</color>
+
+    <color name="theme_blue_light">#37a2ff</color>
+    <color name="theme_blue">#0084f8</color>
+    <color name="theme_blue_deep">#0069c6</color>
+
+    <color name="theme_green_light">#01d565</color>
+    <color name="theme_green">#00ac51</color>
+    <color name="theme_green_deep">#008f42</color>
+
+    <color name="theme_red_light">#ff6255</color>
+    <color name="theme_red">#ff3d2d</color>
+    <color name="theme_red_deep">#db1100</color>
+
+    <color name="theme_btn_gray">#bfbfbf</color>
+
+    <color name="theme_green_light_1">#70ad46</color>
+    <color name="theme_green_1">#689e45</color>
+    <color name="theme_blue_light_1">#8fdbf2</color>
+    <color name="theme_blue_1">#1ca7d2</color>
+    <color name="theme_red_light_1">#bd3106</color>
+    <color name="theme_red_1">#9d433a</color>
+    <color name="theme_red_deep_1">#840000</color>
+    <color name="theme_purple_1">#44546b</color>
+    <color name="theme_purple_deep_1">#2323dc</color>
+    <color name="theme_gray_1">#b5b5b5</color>
+    <color name="theme_croci_light_1">#ed7c30</color>
+    <color name="theme_croci_1">#c65a11</color>
+    <color name="theme_yellow_1">#fffc00</color>
+    <color name="tab_unselect">#c9c9c9</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#848383</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="banner_pointContainerBackground">#00000000</color>
+
+    <!-- pulltorefresh -->
+    <color name="pull_cache_color_hint">#00000000</color>
+    <color name="pull_divider">#e1e1e1</color><!--6e6e6e-->
+    <color name="pull_list_selector">#00000000</color>
+    <color name="pull_ptr_header_background">#00000000</color>
+    <color name="pull_ptr_header_text_color">#000000</color>
+
+    <color name="circularprogressbutton_cpb_colorprogress">#00a2cc00</color>
+    <color name="activity_theme_style_transparent">#00000000</color>
+
+    <!-- 自定义edittext -->
+    <color name="custom_default_color">#ffaa00</color>
+    <color name="custom_default_hinttext">#80000000</color>
+    <color name="custom_use_hinttext">#80ffffff</color>
+    <color name="custom_prompt_warning">#ff7f00</color>
+    <color name="custom_prompt_success">#a2cc00</color>
+
+    <color name="setting_item_line">@color/theme_black_light</color>
+
+    <color name="main_actionbar_background">#50000000</color>
+
+</resources>

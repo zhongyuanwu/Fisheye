@@ -1,0 +1,260 @@
+<resources>
+
+    <!-- Base application theme.Base.Theme.AppCompat.Light.DarkActionBar -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/FeelyouWindowAnimTheme</item>
+    </style>
+
+    <style name="AppTheme.Translucent" parent="AppTheme">
+        <item name="android:windowBackground">@color/activity_theme_style_transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/UpdateInfoDialogTHeme</item>
+        <!--         <item name="android:windowAnimationStyle">@+android:style/Animation.Dialog</item> -->
+    </style>
+
+    <!--启动闪白or闪黑bug,启动的activity使用-->
+    <style name="AppTheme.SplashMain" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/sign_bg</item>
+        <!--如果启动的activity是Splash页面就开打下面全屏true,如果不是就false-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+    </style>
+
+    <style name="AppTheme.Sign" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/SignWindowAnimTheme</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/activity_anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_anim_in_below</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_anim_out_below</item>
+        <item name="android:activityCloseExitAnimation">@anim/activity_anim_out</item>
+    </style>
+
+    <style name="SignWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/qr_code_anim_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/qr_code_anim_out_below</item>
+        <item name="android:activityCloseEnterAnimation">@anim/qr_code_anim_out_below</item>
+        <item name="android:activityCloseExitAnimation">@anim/qr_code_anim_out</item>
+    </style>
+
+    <style name="UpdateInfoDialogTHeme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/updateinfo_dialog_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/activity_anim_in_below</item>
+        <item name="android:activityCloseEnterAnimation">@anim/activity_anim_out_below</item>
+        <item name="android:activityCloseExitAnimation">@anim/updateinfo_dialog_out</item>
+    </style>
+
+    <style name="list_and_grid_custom_style_parent">
+        <item name="ptrAnimationStyle">flip</item>
+        <item name="ptrHeaderBackground">@color/pull_ptr_header_background</item>
+        <item name="ptrHeaderTextColor">@color/pull_ptr_header_text_color</item>
+        <item name="ptrListViewExtrasEnabled">true</item>
+        <item name="ptrScrollingWhileRefreshingEnabled">true</item>
+        <item name="ptrShowIndicator">false</item>
+        <item name="ptrShowText">false</item>
+        <!--<item name="ptrDrawable">@drawable/ptr_flip</item>-->
+        <!-- android:overScrollMode="never" 不显示阴影   必须和不显示剪头一起用  ptr:ptrShowIndicator="false" -->
+
+        <!-- ptr:ptrAnimationStyle="gif" -->
+        <!-- ptr:ptrGifAsset="squirrel.gif" -->
+
+        <!--<item name="ptrAnimationStyle">rotate</item> 多个图片切换-->
+    </style>
+
+    <style name="list_and_grid_custom_style" parent="@style/list_and_grid_custom_style_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:cacheColorHint">@color/pull_cache_color_hint</item>
+        <item name="android:divider">@color/pull_divider</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fastScrollEnabled">false</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:headerDividersEnabled">false</item>
+        <item name="android:listSelector">@color/pull_list_selector</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:smoothScrollbar">true</item>
+        <!-- gridview 单独设置 android:numColumns="2";android:verticalSpacing="4dp";android:horizontalSpacing="4dp";等以一些gridview特有的属性-->
+    </style>
+
+    <style name="btn_CircularProgressButton">
+        <item name="cpb_colorIndicator">@color/theme_red</item>
+        <item name="cpb_colorIndicatorBackground">@color/theme_green</item>
+        <item name="cpb_colorProgress">@color/circularprogressbutton_cpb_colorprogress</item>
+        <item name="cpb_cornerRadius">4dp</item>
+        <item name="cpb_selectorComplete">@color/theme_green</item>
+        <item name="cpb_selectorError">@color/theme_red</item>
+        <item name="cpb_textComplete">@string/btn_complete</item>
+        <item name="cpb_textError">@string/btn_failure</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_marginLeft">@dimen/sign_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/sign_margin_left_right</item>
+        <item name="android:textColor">@color/theme_black</item>
+        <item name="android:textSize">@dimen/theme_16_title</item>
+    </style>
+
+    <!--toast-->
+    <style name="DefaultText">
+        <item name="android:text">Default</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="DefaultRootLayout">
+        <item name="android:background">@drawable/background_standard_green</item>
+    </style>
+    <!-- Base style for animations.  This style specifies no animations. -->
+    <style name="Animation" />
+
+    <style name="Animation.Pull" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/toast_pull_enter</item>
+        <item name="android:windowExitAnimation">@anim/toast_pull_exit</item>
+    </style>
+    <!--toast end-->
+
+    <style name="StyleProgressBarMini" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">2dip</item>
+        <item name="android:minHeight">2dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/shape_progressbar_mini</item>
+    </style>
+
+    <style name="edit_custom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/sign_margin_top_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/sign_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/sign_margin_left_right</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="hintColor">@color/theme_gray_deep</item>
+        <item name="hrColor">@color/theme_black</item>
+        <item name="iconColor">@color/theme_black</item>
+        <item name="iconSize">@dimen/custom_edittext_icon</item>
+        <item name="textColor">@color/theme_black</item>
+        <item name="textSize">@dimen/custom_edittext_text</item>
+    </style>
+
+    <style name="RadioButtonBottomTab">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/main_toobar_text_size</item>
+        <item name="android:textColor">@drawable/main_toolbar_txtcolor_white2green_sel</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">2dp</item>
+    </style>
+
+    <style name="setting_item_ll_parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="setting_item_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="setting_item_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textColor">@color/theme_black</item>
+        <item name="android:textSize">@dimen/theme_16_title</item>
+    </style>
+
+    <style name="setting_item_tv">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">@color/theme_black</item>
+        <item name="android:textSize">@dimen/theme_16_title</item>
+    </style>
+
+    <style name="setting_item_tv_secondary">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:textColor">@color/theme_black</item>
+        <item name="android:textSize">@dimen/theme_12_small</item>
+    </style>
+
+    <!--sign update-->
+    <style name="fragment_sign_ll_header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fragment_sign_ll_header</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="fragment_sign_ll_footer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fragment_sign_ll_footer</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/fragment_sign_in_margin_top_bottom</item>
+        <item name="android:layout_marginLeft">@dimen/custom_edittext_margin_left_right</item>
+        <item name="android:layout_marginRight">@dimen/custom_edittext_margin_left_right</item>
+    </style>
+
+
+    <style name="fragment_sign_tv_close">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/fragment_sign_in_tv_close_padding</item>
+        <item name="android:textColor">@color/theme_gray</item>
+        <item name="android:textSize">@dimen/theme_14_text</item>
+    </style>
+
+    <style name="fragment_sign_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/fragment_sign_in_tv_close_padding</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@color/theme_black</item>
+        <item name="android:textSize">@dimen/theme_14_text</item>
+    </style>
+
+    <style name="info_layout_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/theme_black</item>
+        <item name="android:textSize">@dimen/theme_16_title</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+</resources>

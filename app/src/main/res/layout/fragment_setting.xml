@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_actionbar_fragment_setting"
+        layout="@layout/include_action_bar_2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:paddingTop="16dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--版本信息-->
+            <LinearLayout
+                android:id="@+id/ll_version"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_version"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_version" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_version"
+                        style="@style/setting_item_tv"
+                        android:text="@string/setting_tv_version" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_version_secondary"
+                        style="@style/setting_item_tv_secondary"
+                        android:text="@string/current_version_param" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--清除缓存-->
+            <LinearLayout
+                android:id="@+id/ll_cache"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_cache"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_cache" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_cache"
+                        style="@style/setting_item_tv"
+                        android:text="@string/setting_tv_cache" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_cache_secondary"
+                        style="@style/setting_item_tv_secondary" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--意见反馈-->
+            <LinearLayout
+                android:id="@+id/ll_suggestion"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_suggestion"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_edit" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_suggestion"
+                        style="@style/setting_item_tv"
+                        android:text="@string/setting_tv_suggestion" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--关于我们-->
+            <LinearLayout
+                android:id="@+id/ll_about_us"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_about_us"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_about_us" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_about_us"
+                        style="@style/setting_item_tv"
+                        android:text="@string/setting_tv_about_us" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+
+            <!--服务条款与隐私条款-->
+            <LinearLayout
+                android:id="@+id/ll_privacy_clause"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_privacy_clause"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_privacy_clause" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_privacy_clause"
+                        style="@style/setting_item_tv"
+                        android:text="@string/setting_tv_privacy_clause" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/wb_btn_logout"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/setting_gray_btn_bg"
+                android:text="@string/logout"
+                android:textColor="@color/theme_red" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

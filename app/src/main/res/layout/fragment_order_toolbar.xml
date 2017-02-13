@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/custom_actionbar_base_color_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/toolbar_title_margin_top"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+        <!--android:dividerPadding="8dp"-->
+        <!--android:divider="@drawable/tab_divider_gray_light"-->
+        <!--android:showDividers="middle"-->
+
+        <LinearLayout
+            android:id="@+id/toolbar_ll_all"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/wb_toolbar_tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_all"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/toolbar_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_ll_not_pay"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/wb_toolbar_tv_not_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_not_pay"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/toolbar_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_ll_not_shipped"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/wb_toolbar_tv_not_shipped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_not_shipped"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/toolbar_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_ll_already_shipped"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/wb_toolbar_tv_already_shipped"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_already_shipped"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/toolbar_title_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_ll_already_completed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/wb_toolbar_tv_already_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/order_already_completed"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/toolbar_title_size" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.viewpagerindicator.UnderlinePageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_line_height"
+        custom:fades="false"
+        custom:paddingLeftAndRight="12dp"
+        custom:roundValue="4dp"
+        custom:selectedColor="@color/theme_green_1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/custom_actionbar_base_color_line"
+        android:visibility="visible" />
+
+</LinearLayout>

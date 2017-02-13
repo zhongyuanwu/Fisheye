@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- head文件 -->
+    <color name="custom_actionbar_base_color_background">#ffffff</color>
+    <color name="custom_actionbar_base_color_text">@color/theme_black</color>
+    <color name="custom_actionbar_base_color_line">@color/theme_black</color><!--a4a7a8-->
+
+</resources>

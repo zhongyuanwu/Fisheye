@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout_imagebuttonlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/header_ib_imagebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:focusable="false"
+        android:padding="6dip"
+        android:textColor="@color/custom_actionbar_base_color_text" />
+
+</LinearLayout>

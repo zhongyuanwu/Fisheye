@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DialogUtils start -->
+    <!--透明,开启模糊,实际是半黑色-->
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--全透明-->
+    <style name="transparentFrameWindowStyle.DimTotEnabled" parent="transparentFrameWindowStyle">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="shaking_answer_animstyle">
+        <item name="android:windowEnterAnimation">@anim/dialog_shaking_answer_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_shaking_answer_out</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/dialogutils_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/dialogutils_out_anim</item>
+    </style>
+    <!-- hr line(分割线) -->
+    <style name="dialogutils_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#DAD9DB</item>
+    </style>
+    <!-- 上 -->
+    <style name="dialogutils_top">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/dialogutils_top_selector</item>
+        <item name="android:paddingTop">@dimen/dialogutils_padding_top_bottom</item>
+        <item name="android:paddingBottom">@dimen/dialogutils_padding_top_bottom</item>
+        <item name="android:layout_marginTop">@dimen/dialogutils_margin_top</item>
+        <item name="android:textSize">@dimen/dialogutils_text</item>
+    </style>
+    <!-- 中 -->
+    <style name="dialogutils_center">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/dialogutils_center_selector</item>
+        <item name="android:paddingTop">@dimen/dialogutils_padding_top_bottom</item>
+        <item name="android:paddingBottom">@dimen/dialogutils_padding_top_bottom</item>
+        <item name="android:textSize">@dimen/dialogutils_text</item>
+    </style>
+    <!-- 下 -->
+    <style name="dialogutils_bottom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/dialogutils_bottom_selector</item>
+        <item name="android:paddingTop">@dimen/dialogutils_padding_top_bottom</item>
+        <item name="android:paddingBottom">@dimen/dialogutils_padding_top_bottom</item>
+        <item name="android:textSize">@dimen/dialogutils_text</item>
+    </style>
+    <!-- 1个(一般用与最下面的取消) -->
+    <style name="dialogutils_cancel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/dialogutils_cancel_selector</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">@dimen/dialogutils_padding_top_bottom</item>
+        <item name="android:layout_marginTop">@dimen/dialogutils_margin_top</item>
+        <item name="android:textSize">@dimen/dialogutils_text</item>
+    </style>
+
+    <!-- DialogUtils end -->
+
+</resources>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/common_actionbar_fragment_my"
+        layout="@layout/include_action_bar_2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--头信息-->
+            <LinearLayout
+                style="@style/setting_item_ll_parent"
+                android:gravity="center_horizontal"
+                android:paddingBottom="24dp">
+
+                <com.iyuile.caelum.view.CircularImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="36dp"
+                    android:src="@drawable/no_img_user"
+                    custom:border_color="@android:color/white"
+                    custom:border_width="0dp"
+                    custom:shadow="true" />
+
+                <TextView
+                    android:id="@+id/wb_tv_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/my_nickname"
+                    android:textColor="@color/theme_black"
+                    android:textSize="@dimen/theme_18_h3" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_nickname_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <TextView
+                        android:id="@+id/icon_nickname_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:text="@string/icon_edit"
+                        android:textColor="@color/theme_black_light"
+                        android:textSize="@dimen/theme_12_small" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_nickname_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="@string/my_nickname_update"
+                        android:textColor="@color/theme_black_light"
+                        android:textSize="@dimen/theme_12_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--真实姓名-->
+            <LinearLayout
+                android:id="@+id/ll_real_name"
+                style="@style/setting_item_ll_parent"
+                android:layout_marginTop="8dp">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_real_name"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_real_name" />
+
+                    <EditText
+                        android:id="@+id/wb_et_real_name"
+                        style="@style/info_layout_title_style"
+                        android:layout_toRightOf="@+id/icon_job"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="@string/my_tv_real_name" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--性别-->
+            <LinearLayout
+                android:id="@+id/ll_sex"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_sex"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_sex" />
+
+                    <EditText
+                        android:id="@+id/wb_et_sex"
+                        style="@style/info_layout_title_style"
+                        android:layout_toRightOf="@+id/icon_sex"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="@string/my_tv_sex" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--生日-->
+            <LinearLayout
+                android:id="@+id/ll_birthday"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_birthday"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_birthday" />
+
+                    <EditText
+                        android:id="@+id/wb_et_birthday"
+                        style="@style/info_layout_title_style"
+                        android:layout_toRightOf="@+id/icon_birthday"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:hint="@string/my_tv_birthday" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--修改密码-->
+            <LinearLayout
+                android:id="@+id/ll_update_pwd"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_update_pwd"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_pwd" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_update_pwd"
+                        style="@style/setting_item_tv"
+                        android:text="@string/my_tv_update_pwd" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--修改手机号-->
+            <LinearLayout
+                android:id="@+id/ll_update_phone"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_update_phone"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_phone" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_update_phone"
+                        style="@style/setting_item_tv"
+                        android:text="@string/my_tv_update_phone" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/setting_item_line" />
+
+            </LinearLayout>
+
+            <!--收获地址-->
+            <LinearLayout
+                android:id="@+id/ll_harvest_address"
+                style="@style/setting_item_ll_parent">
+
+                <LinearLayout style="@style/setting_item_ll">
+
+                    <TextView
+                        android:id="@+id/icon_harvest_address"
+                        style="@style/setting_item_icon"
+                        android:text="@string/icon_harvest_address" />
+
+                    <TextView
+                        android:id="@+id/wb_tv_harvest_address"
+                        style="@style/setting_item_tv"
+                        android:text="@string/my_tv_harvest_address" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

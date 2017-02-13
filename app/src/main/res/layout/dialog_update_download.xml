@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.iyuile.caelum.view.progressbar.IconRoundCornerProgressBar
+        android:id="@+id/pb_irc_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        custom:rcBackgroundColor="#CFFF"
+        custom:rcBackgroundPadding="2dp"
+        custom:rcIconBackgroundColor="@color/theme_blue_1"
+        custom:rcIconPadding="4dp"
+        custom:rcIconSize="20dp"
+        custom:rcIconSrc="@drawable/mark_download"
+        custom:rcMax="100"
+        custom:rcProgress="0"
+        custom:rcProgressColor="@color/theme_blue_light_1"
+        custom:rcRadius="99dp" />
+
+</RelativeLayout>

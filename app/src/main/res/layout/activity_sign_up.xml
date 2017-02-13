@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.SignUpActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/sign_bg" />
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/include_action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/actionbar"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <com.iyuile.caelum.view.ShadowLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="18dp"
+            custom:sl_cornerRadius="0dp"
+            custom:sl_dx="0dp"
+            custom:sl_dy="0dp"
+            custom:sl_shadowRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sign_white_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="20dp">
+
+                <com.iyuile.caelum.view.CustomEditText
+                    android:id="@+id/ce_phone"
+                    style="@style/edit_custom"
+                    custom:hintText="@string/phone_hint"
+                    custom:iconText="@string/icon_phone"
+                    custom:inputType="number"
+                    custom:text="@null" />
+
+                <include
+                    android:id="@+id/image_code"
+                    layout="@layout/custom_image_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/sign_margin_left_right"
+                    android:layout_marginRight="@dimen/sign_margin_left_right"
+                    android:layout_marginTop="@dimen/sign_margin_top_bottom" />
+
+                <include
+                    android:id="@+id/sms_code"
+                    layout="@layout/custom_sms_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/sign_margin_left_right"
+                    android:layout_marginRight="@dimen/sign_margin_left_right"
+                    android:layout_marginTop="@dimen/sign_margin_top_bottom" />
+
+                <com.iyuile.caelum.view.CustomEditText
+                    android:id="@+id/ce_pwd"
+                    style="@style/edit_custom"
+                    custom:hintText="@string/pwd_hint"
+                    custom:iconText="@string/icon_pwd"
+                    custom:inputType="textPassword"
+                    custom:text="@null" />
+
+                <com.iyuile.circularprogressbutton.CircularProgressButton
+                    android:id="@+id/btn_sign_up"
+                    style="@style/btn_CircularProgressButton"
+                    android:layout_marginBottom="20dp"
+                    custom:cpb_selectorIdle="@color/theme_btn_gray"
+                    custom:cpb_textIdle="@string/sign_up_btn" />
+
+            </LinearLayout>
+
+        </com.iyuile.caelum.view.ShadowLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="icon_my">&#xe65a;</string>
+    <string name="icon_pwd">&#xe652;</string>
+    <string name="icon_phone">&#xe658;</string>
+    <string name="icon_verification_code">&#xe65c;</string>
+    <string name="icon_sms_code">&#xe663;</string>
+    <string name="icon_main">&#xe659;</string>
+    <string name="icon_order">&#xe64d;</string>
+    <string name="icon_setting">&#xe655;</string>
+
+    <string name="icon_version">&#xe64b;</string>
+    <string name="icon_edit">&#xe65d;</string>
+    <string name="icon_about_us">&#xe651;</string>
+    <string name="icon_privacy_clause">&#xe64f;</string>
+
+    <string name="icon_real_name">&#xe65e;</string>
+    <string name="icon_sex">&#xe65b;</string>
+    <string name="icon_birthday">&#xe656;</string>
+    <string name="icon_harvest_address">&#xe657;</string>
+
+    <string name="icon_return">&#xe64e;</string>
+    <string name="icon_return_right">&#xe65f;</string>
+    <string name="icon_return_bottom">&#xe661;</string>
+    <string name="icon_delete">&#xe654;</string>
+    <string name="icon_phone_1">&#xe64c;</string>
+    <string name="icon_curriculum">&#xe662;</string>
+    <string name="icon_cache">&#xe654;</string>
+
+    <string name="icon_tu_1">&#xe66b;</string>
+    <string name="icon_tu_2">&#xe66a;</string>
+    <string name="icon_tu_3">&#xe669;</string>
+    <string name="icon_tu_4">&#xe668;</string>
+    <string name="icon_tu_5">&#xe667;</string>
+    <string name="icon_tu_6">&#xe666;</string>
+    <string name="icon_tu_7">&#xe665;</string>
+    <string name="icon_tu_8">&#xe664;</string>
+
+</resources>

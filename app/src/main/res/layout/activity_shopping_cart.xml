@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".activity.ShoppingCartActivity">
+
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/include_action_bar_2" />
+
+    <com.iyuile.pulltorefreshanimlibrary.PullToRefreshListView
+        android:id="@+id/list_view"
+        style="@style/list_and_grid_custom_style"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:dividerHeight="0.5dp"
+        custom:ptrShowText="true" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_black_light" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp">
+
+        <RadioButton
+            android:id="@+id/wb_btn_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:text="@string/shopping_cart_check_all"
+            android:textColor="@color/theme_black"
+            android:textSize="@dimen/theme_12_small" />
+
+        <TextView
+            android:id="@+id/wb_tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/theme_red_1"
+            android:textSize="@dimen/theme_14_text" />
+
+        <Button
+            android:id="@+id/wb_btn_settle_accounts"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/mall_ware_detailed_btn_blue_bg"
+            android:padding="4dp"
+            android:text="@string/shopping_cart_settle_accounts"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/theme_18_h3" />
+
+    </LinearLayout>
+
+</LinearLayout>

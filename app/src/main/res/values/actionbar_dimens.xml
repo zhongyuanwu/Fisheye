@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- head文件start -->
+    <dimen name="base_action_bar_height">48.0dip</dimen>
+    <dimen name="base_action_bar_title_size">26.0sp</dimen>
+    <dimen name="base_action_bar_btn_size">16sp</dimen>
+    <!-- head文件end -->
+
+</resources>

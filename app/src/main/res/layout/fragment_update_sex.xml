@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_update_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/fragment_sign_in_margin_top_bottom">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        style="@style/fragment_sign_ll_header">
+
+        <TextView
+            android:id="@+id/tv_close"
+            style="@style/fragment_sign_tv_close"
+            android:text="@string/fragment_sgin_tv_close" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wb_update_tv_title"
+        style="@style/fragment_sign_tv_title"
+        android:text="@string/update_sex" />
+
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/wb_rb_sex_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/custom_edittext_margin_left_right"
+            android:layout_marginRight="@dimen/custom_edittext_margin_left_right"
+            android:layout_marginTop="@dimen/fragment_sign_in_margin_top_bottom"
+            android:gravity="center"
+            android:tag="1"
+            android:padding="6dp"
+            android:text="@string/sex_1"
+            android:textColor="@color/theme_black"
+            android:textSize="@dimen/theme_12_small" />
+
+        <RadioButton
+            android:id="@+id/wb_rb_sex_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/custom_edittext_margin_left_right"
+            android:layout_marginRight="@dimen/custom_edittext_margin_left_right"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:tag="2"
+            android:padding="6dp"
+            android:text="@string/sex_2"
+            android:textColor="@color/theme_black"
+            android:textSize="@dimen/theme_12_small" />
+
+        <RadioButton
+            android:id="@+id/wb_rb_sex_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/custom_edittext_margin_left_right"
+            android:layout_marginRight="@dimen/custom_edittext_margin_left_right"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:tag="3"
+            android:padding="6dp"
+            android:text="@string/sex_3"
+            android:textColor="@color/theme_black"
+            android:textSize="@dimen/theme_12_small" />
+    </RadioGroup>
+
+</LinearLayout>

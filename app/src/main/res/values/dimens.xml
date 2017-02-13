@@ -1,0 +1,48 @@
+<resources>
+    <dimen name="base_action_bar_right_btn_txt_size">12sp</dimen>
+
+    <dimen name="theme_40_h1">40sp</dimen>
+    <dimen name="theme_24_h2">24sp</dimen>
+    <dimen name="theme_22">22sp</dimen>
+    <dimen name="theme_20">20sp</dimen>
+    <dimen name="theme_18_h3">18sp</dimen>
+    <dimen name="theme_16_title">16sp</dimen>
+    <dimen name="theme_14_text">14sp</dimen>
+    <dimen name="theme_12_small">12sp</dimen>
+    <dimen name="theme_10_small">10sp</dimen>
+
+    <dimen name="custom_edittext_icon">18sp</dimen>
+    <dimen name="custom_edittext_text">16sp</dimen>
+
+    <dimen name="toolbar_title_margin_top">4dp</dimen>
+    <dimen name="toolbar_line_height">3dp</dimen>
+    <dimen name="toolbar_title_size">16sp</dimen>
+
+    <dimen name="main_toolbar_height">52dp</dimen>
+
+    <dimen name="item_exhibition_event_information_header_banner_tips_margin_top_bottom">14dp</dimen>
+    <dimen name="item_exhibition_event_information_header_banner_tips_margin_left_right">14dp</dimen>
+
+    <dimen name="sign_margin_top_bottom">4dp</dimen>
+    <dimen name="sign_margin_left_right">26dp</dimen>
+
+    <dimen name="action_bar_subhead">16sp</dimen>
+    <dimen name="action_bar_subhead_2">20sp</dimen>
+
+    <dimen name="plate_yingan_margin_left_right">18dp</dimen>
+    <dimen name="plate_yingan_margin_top_bottom">28dp</dimen>
+    <dimen name="plate_yingan_kongwang_margin_top_bottom">76dp</dimen>
+
+    <!-- main底部工具栏 -->
+    <dimen name="main_toobar_text_size">12sp</dimen>
+
+    <dimen name="fragment_sign_in_margin_top_bottom">24dp</dimen>
+    <dimen name="fragment_sign_ll_header">50dp</dimen>
+    <dimen name="fragment_sign_ll_footer">30dp</dimen>
+    <dimen name="custom_edittext_margin_left_right">24dp</dimen>
+    <dimen name="fragment_sign_in_tv_close_padding">16dp</dimen>
+
+    <dimen name="bazi_info_padding_left_right">12dp</dimen>
+    <dimen name="bazi_info_padding_top_bottom">6dp</dimen>
+
+</resources>

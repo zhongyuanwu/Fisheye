@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- super toast -->
+    <!-- General dimensions -->
+    <dimen name="toast_hover">0dp</dimen>
+    
+    <dimen name="corners_radius">0dp</dimen>
+
+</resources>

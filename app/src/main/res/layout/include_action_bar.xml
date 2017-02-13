@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_status_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorStatusBar" />
+
+    <com.iyuile.caelum.view.HeaderLayout
+        android:id="@+id/common_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_action_bar_height"
+        custom:style="default_title"
+        custom:textColorCenter="@android:color/black"
+        custom:titleText="@string/app_name">
+        <!--common_actionbar_line显示的时候给common_actionbar设置下面代码(保证androidbar高度正好)-->
+        <!--android:layout_marginBottom="-0.5dp"-->
+
+    </com.iyuile.caelum.view.HeaderLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_subhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/custom_actionbar_base_color_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/custom_actionbar_base_color_text"
+            android:textSize="@dimen/action_bar_subhead" />
+
+        <View
+            android:id="@+id/tv_label"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/toolbar_line_height"
+            android:background="@drawable/actionbar_label_green_bg" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/common_actionbar_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/custom_actionbar_base_color_line" />
+
+</LinearLayout>
+

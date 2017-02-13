@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <com.iyuile.caelum.view.RoundAngleImageView
+        android:id="@+id/iv_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/no_img_user"
+        custom:borderRadius="4dp"
+        custom:type="round" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_img"
+        android:layout_marginRight="68dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/theme_black"
+        android:textSize="@dimen/theme_16_title" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginRight="68dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/theme_black_light"
+        android:textSize="@dimen/theme_12_small" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/theme_green_1"
+        android:textSize="@dimen/theme_12_small" />
+
+    <TextView
+        android:id="@+id/tv_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/item_order_count_bg"
+        android:text="1"
+        android:textColor="@color/theme_black"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+</RelativeLayout>

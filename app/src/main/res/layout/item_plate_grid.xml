@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.iyuile.caelum.view.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_croci_light_1"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_bashen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/theme_red_deep_1"
+        android:textSize="@dimen/theme_14_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_tiangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_dizhi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_jiuxing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/theme_purple_deep_1"
+        android:textSize="@dimen/theme_14_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_bamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/theme_purple_deep_1"
+        android:textSize="@dimen/theme_14_text"
+        android:textStyle="bold" />
+
+</com.iyuile.caelum.view.SquareLayout>

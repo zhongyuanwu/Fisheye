@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomActionBar">
+        <attr name="textLeft" format="string"></attr>
+        <attr name="textLeftImg" format="reference"></attr>
+        <attr name="titleText" format="string"></attr>
+        <attr name="textRight" format="string"></attr>
+        <attr name="textRightImg" format="reference"></attr>
+        <attr name="textColorc" format="color"></attr>
+        <attr name="textColorCenter" format="color"></attr>
+        <attr name="textSizes" format="dimension"></attr>
+        <attr name="textSizeCenter" format="dimension"></attr>
+        <attr name="backgrounds" format="reference"></attr>
+        <attr name="backgroundc" format="color"></attr>
+        <attr name="style">
+            <enum name="default_title" value="0x00000001" />
+            <enum name="title_left_imagebutton" value="0x00000002" />
+            <enum name="title_right_imagebutton" value="0x00000003" />
+            <enum name="title_double_imagebutton" value="0x00000004" />
+            <enum name="title_left_txtbutton" value="0x00000005" />
+            <enum name="title_right_txtbutton" value="0x00000006" />
+            <enum name="title_double_txtbutton" value="0x00000007" />
+        </attr>
+    </declare-styleable>
+
+</resources>

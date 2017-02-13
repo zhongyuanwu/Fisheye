@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- head文件start -->
+    <style name="ActionBar">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/custom_actionbar_base_color_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">@dimen/base_action_bar_height</item>
+    </style>
+    <!-- <item name="android:background">@drawable/top_bar</item> -->
+
+    <style name="ActionBarTitle">
+        <item name="android:textSize">@dimen/base_action_bar_title_size</item>
+        <item name="android:textColor">@color/custom_actionbar_base_color_text</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:drawablePadding">1.0dip</item>
+    </style>
+    <!-- head文件end -->
+
+</resources>

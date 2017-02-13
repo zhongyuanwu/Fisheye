@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="item_exhibition_event_information_header_banner_tips_margin_top_bottom">28dp</dimen>
+
+</resources>

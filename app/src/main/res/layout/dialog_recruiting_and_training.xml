@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.iyuile.caelum.view.ShadowLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:sl_cornerRadius="0dp"
+        custom:sl_dx="0dp"
+        custom:sl_dy="0dp"
+        custom:sl_shadowRadius="4dp">
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_recruiting_and_training_bg"
+            android:padding="24dp"
+            android:textColor="@color/theme_croci_1"
+            android:textIsSelectable="true"
+            android:textSize="@dimen/theme_18_h3" />
+    </com.iyuile.caelum.view.ShadowLayout>
+
+</LinearLayout>

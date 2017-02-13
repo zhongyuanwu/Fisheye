@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="8dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <RadioButton
+        android:id="@+id/rb_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp" />
+
+    <com.iyuile.caelum.view.RoundAngleImageView
+        android:id="@+id/iv_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/rb_check"
+        android:src="@drawable/no_img_user"
+        custom:borderRadius="4dp"
+        custom:type="round" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_img"
+        android:layout_marginRight="36dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/theme_black"
+        android:textSize="@dimen/theme_16_title" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/theme_blue_light_1"
+        android:textSize="@dimen/theme_12_small" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/tv_desc"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/iv_img"
+        android:background="@drawable/item_shopping_cart_bg_shadow"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_subtract"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/shopping_cart_subtract"
+            android:textColor="@color/theme_black"
+            android:textSize="@dimen/theme_20" />
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/item_shopping_cart_edittext_bg_white_shadow"
+            android:focusable="false"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/theme_black"
+            android:textSize="@dimen/theme_16_title" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/shopping_cart_add"
+            android:textColor="@color/theme_black"
+            android:textSize="@dimen/theme_20" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/icon_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="4dp"
+        android:text="@string/icon_delete"
+        android:textColor="@color/theme_black"
+        android:textSize="@dimen/theme_16_title" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+</RelativeLayout>

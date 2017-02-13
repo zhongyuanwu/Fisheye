@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- DialogUtils start -->
+    <dimen name="dialogutils_text">16sp</dimen>
+    <dimen name="dialogutils_padding_top_bottom">10dp</dimen>
+    <dimen name="dialogutils_margin_top">5dp</dimen>
+    <!-- DialogUtils end -->
+
+</resources>

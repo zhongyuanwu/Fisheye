@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.ReceiptAddressActivity">
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:contentDescription="@string/app_name"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/main_bg" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/actionbar"
+            layout="@layout/include_action_bar_2" />
+
+        <LinearLayout
+            android:id="@+id/ll_receipt_address_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <View
+                android:id="@+id/wb_tv_title"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/wb_tv_title_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/receipt_address_add"
+                android:textColor="@color/theme_black_light"
+                android:textSize="@dimen/theme_12_small" />
+
+            <TextView
+                android:id="@+id/icon_indicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:text="@string/icon_return_right"
+                android:textColor="@color/theme_black"
+                android:textSize="@dimen/theme_16_title" />
+
+        </LinearLayout>
+
+        <com.iyuile.pulltorefreshanimlibrary.PullToRefreshListView
+            android:id="@+id/list_view"
+            style="@style/list_and_grid_custom_style"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            custom:ptrShowText="true" />
+
+    </LinearLayout>
+
+</RelativeLayout>

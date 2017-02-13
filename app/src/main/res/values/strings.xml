@@ -1,0 +1,380 @@
+<resources>
+    <string name="app_name">鱼眼</string>
+
+    <string name="constellation_prompt_message">请先去设置生日</string>
+    <string name="press_again_exit">再按一次退出</string>
+
+    <string name="order_status_not_pay">待付款</string>
+    <string name="order_status_not_shipped">待发货</string>
+    <string name="order_status_already_shipped">已发货</string>
+    <string name="order_status_already_completed">已完成</string>
+    <string name="order_status_unknown">未知状态</string>
+
+    <string name="order_all">全部</string>
+    <string name="order_not_pay">待付款</string>
+    <string name="order_not_shipped">待发货</string>
+    <string name="order_already_shipped">已发货</string>
+    <string name="order_already_completed">已完成</string>
+
+    <string name="mall_recommend">推荐</string>
+    <string name="mall_classify">分类</string>
+    <string name="mall_shopping_cart">购物车</string>
+
+    <string name="mall_ware_detailed_shopping_cart_add">加入购物车</string>
+    <string name="mall_ware_detailed_buy_immediately">立即购买</string>
+
+    <string name="shopping_cart_settle_accounts">结算</string>
+    <string name="shopping_cart_check_all">全选</string>
+    <string name="shopping_cart_my">我的购物车</string>
+
+    <string name="order_confirm">订单确认</string>
+    <string name="order_confirm_amount">合计</string>
+    <string name="order_confirm_immediate_order">立即下单</string>
+    <string name="order_confirm_receipt_address">收货地址</string>
+    <string name="order_confirm_receipt_address_subhead">请填写收货地址</string>
+    <string name="order_confirm_name">姓名：%s</string>
+    <string name="order_confirm_telephone">手机号：%s</string>
+    <string name="order_confirm_receipt_address_info">收货地址：%s</string>
+
+    <string name="receipt_address">管理收货地址</string>
+    <string name="receipt_address_add">添加新地址</string>
+    <string name="receipt_address_default_address">默认地址</string>
+    <string name="receipt_address_edit">编辑</string>
+    <string name="receipt_address_delete">删除</string>
+
+    <string name="receipt_address_new">新建地址</string>
+    <string name="receipt_address_new_actionbar_right_txt">保存</string>
+    <string name="receipt_address_new_setting_default_address">设为默认地址</string>
+    <string name="receipt_address_new_hint_name">收货人姓名</string>
+    <string name="receipt_address_new_hint_telephone">联系电话</string>
+    <string name="receipt_address_new_hint_city">省份、城市</string>
+    <string name="receipt_address_new_hint_address">请填写详细地址 不少于5个字</string>
+
+    <string name="receipt_address_new_name_prompt_empty">请输入收货人姓名</string>
+    <string name="receipt_address_new_name_prompt_length_max">收货人姓名最多%s个字</string>
+    <string name="receipt_address_new_telephone_prompt_empty">请输入联系电话</string>
+    <string name="receipt_address_new_city_prompt_empty">请选择省份、城市</string>
+    <string name="receipt_address_new_address_prompt_empty">请填写详细地址 不少于5个字</string>
+    <string name="receipt_address_new_address_prompt_length_max">详细地址最多%s个字</string>
+    <string name="receipt_address_new_send_loading">发送中&#8230;</string>
+    <string name="receipt_address_new_update_loading">修改中&#8230;</string>
+    <string name="receipt_address_new_prompt_failure">创建收货地址失败</string>
+    <string name="receipt_address_new_update_prompt_failure">修改收货地址失败</string>
+
+    <string name="order_buy">订单支付</string>
+    <string name="order_buy_order_info">订单信息</string>
+    <string name="order_buy_inventory">购物清单</string>
+    <string name="order_buy_order_prompt_html"><Data><![CDATA[<span>重要提示：请在<font color="#ff0000">24小时</font>内完成支付，超时订单将自动取消。我们将再您完成支付后的72小时内发货。</span>]]></Data></string>
+    <string name="order_buy_inventory_subhead_1">共计</string>
+    <string name="order_buy_inventory_subhead_3">件商品</string>
+    <string name="order_buy_carriage">运费</string>
+    <string name="order_buy_payable_price">应付金额</string>
+    <string name="order_buy_pay_model">请选择支付方式</string>
+
+    <string name="order_buy_pay_model_wechat">微信支付</string>
+
+    <string name="dialog_order_buy_cancel">取消</string>
+    <string name="dialog_order_pay_btn_text">立即支付</string>
+    <string name="dialog_order_pay_btn_complete">支付成功</string>
+    <string name="dialog_order_pay_btn_error">支付失败</string>
+    <string name="dialog_order_pay_btn_cancel">支付取消</string>
+    <string name="dialog_order_buy_btn_complete">购买成功</string>
+
+    <string name="item_order_pay_count">数量</string>
+
+    <string name="shopping_cart_subtract">&#045;</string>
+    <string name="shopping_cart_add">&#043;</string>
+
+    <string name="mall_ware">商品</string>
+
+    <string name="my_nickname">昵称</string>
+    <string name="my_nickname_update"><u>点此更改昵称</u></string>
+
+    <string name="logout">退出登录</string><!-- logout -->
+    <string name="login">登录</string><!-- logout -->
+
+    <string name="main_toolbar_tv_main">主页</string>
+    <string name="main_toolbar_tv_my">我的</string>
+    <string name="main_toolbar_tv_order">订单</string>
+    <string name="main_toolbar_tv_setting">设置</string>
+
+    <string name="setting_tv_version">版本信息</string>
+    <string name="setting_tv_cache">清除缓存</string>
+    <string name="setting_tv_suggestion">意见反馈</string>
+    <string name="setting_tv_about_us">关于我们</string>
+    <string name="setting_tv_privacy_clause">服务条款与隐私政策</string>
+
+    <string name="setting_cache_success">清除缓存成功!</string>
+
+    <string name="my_tv_real_name">真实姓名</string>
+    <string name="my_tv_sex">性别</string>
+    <string name="my_tv_birthday">生日</string>
+    <string name="my_tv_update_phone">修改手机号</string>
+    <string name="my_tv_update_pwd">修改密码</string>
+    <string name="my_tv_harvest_address">收获地址</string>
+
+    <string name="phone_hint">请输入手机号</string>
+    <string name="pwd_hint">请输入密码</string>
+    <string name="forget_pwd_underline"><u>忘记密码</u></string>
+
+    <string name="sign_in">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="sign_reset_pwd">忘记密码</string>
+    <string name="sign_up_btn">完成</string>
+
+    <string name="sgin_tv_graph_identifying_code_title">图形码</string>
+    <string name="sgin_tv_graph_identifying_code_hint">请输入图形码</string>
+    <string name="sgin_tv_graph_identifying_code_fail">图形码不正确</string>
+    <string name="sgin_tv_graph_identifying_code_refresh_failure">图形码刷新失败,请重试</string>
+
+    <string name="sgin_tv_sms_code_title">验证码</string>
+    <string name="sgin_tv_sms_code_hint">请输入验证码</string>
+    <string name="sgin_tv_sms_code_fail">验证码码不正确</string>
+
+    <string name="btn_complete">操作成功</string>
+    <string name="btn_failure">操作失败</string>
+
+    <string name="update_check_error">更新应用失败</string>
+    <string name="update_check_no">已经是最新的版本啦</string>
+
+    <string name="mall_ware_detailed_prompt_model_empty">选择商品分类</string>
+
+    <string name="shoppingcart_prompt_add_complete">成功加入购物车</string>
+    <string name="shoppingcart_prompt_add_already_exist">购物车中数量+1</string>
+    <string name="shoppingcart_prompt_add_failure">加入购物车失败</string>
+
+    <string name="shoppingcart_prompt_delete_complete">删除成功</string>
+    <string name="shoppingcart_prompt_delete_failure">删除失败</string>
+    <string name="shoppingcart_prompt_check_null">您还没有选择物品呢!</string>
+    <string name="shoppingcart_prompt_address_null">您还没有选择地址呢!</string>
+
+    <string name="shoppingcart_prompt_create_order_loading">创建订单中&#8230;</string>
+    <string name="shoppingcart_prompt_create_order_complete">创建订单成功</string>
+    <string name="shoppingcart_prompt_create_order_failure">创建订单失败</string>
+
+    <string name="order_confirm_get_order_failure">获取订单信息失败</string>
+
+    <string name="custom_icon_default">&#xe605;</string> <!-- info(信息) -->
+    <string name="custom_icon_success">&#xe60e;</string> <!-- yes(成功) -->
+    <string name="custom_icon_error">&#xe607;</string> <!-- no(失败) -->
+    <string name="custom_icon_warning">&#xe60d;</string> <!-- warning等待 -->
+
+    <string name="fragment_sgin_tv_close">&#xe607;</string> <!-- no -->
+
+    <string name="business_card_holder_2_create_telephone_prompt">请输入手机号码</string>
+
+    <string name="sign_phone_exist">手机号已存在</string>
+    <string name="sign_phone_exist_no">手机号不存在</string>
+
+    <!-- 修改手机号 start -->
+    <string name="update_phone">修改新手机号码</string>
+    <string name="update_phone_hint">修改手机号码</string>
+
+    <string name="update_phone_description">请输入旧手机号码</string>
+    <string name="update_phone_next_step">下一步</string>
+
+    <string name="update_new_phone">新手机号码</string>
+    <string name="update_new_phone_description">请输入新手机号码</string>
+
+    <string name="update_new_phone_code_btn_save">确认修改</string>
+    <string name="update_new_phone_code_btn_save_success">修改成功</string>
+    <string name="update_new_phone_code_btn_save_error">修改失败</string>
+    <!-- 修改手机号 end -->
+    <string name="fragment_sgin_ce_phoneold_falseness">旧号码不正确!</string>
+    <string name="fragment_sgin_ce_phoneold_success">验证成功</string>
+
+    <string name="send_verification_code_success">发送成功!</string>
+    <string name="send_verification_code_error">发送失败!</string>
+
+    <string name="sign_in_phone_falseness">号码不正确!</string>
+    <string name="sign_in_password_intensity_prompt_min">密码强度最少6位</string>
+    <string name="sign_in_password_intensity_prompt_max">密码强度最多18位</string>
+    <string name="sign_in_password_intensity_error_prompt">密码错误</string>
+
+    <string name="unknown_code_2012">未知错误(code:-2012)提示建议:重新输入手机号</string>
+    <string name="unknown_code_3011">未知错误(code:-3011)提示建议:重新登录</string>
+    <string name="unknown_code_3012">未知错误(code:-3012)提示建议:重新登录</string>
+    <string name="unknown_code_3013">未知错误(code:-3013)提示建议:重新登录</string>
+    <string name="unknown_code_3014">未知错误(code:-3014)提示建议:重新登录</string>
+    <string name="unknown_code_3015">未知错误(code:-3015)提示建议:重新登录</string>
+
+    <string name="sign_up_btn_send_verification_code_success">发送成功!</string>
+    <string name="sign_up_btn_send_verification_code_error">发送失败!</string>
+    <string name="sign_up_btn_send_verification_code_no">图形码不正确</string>
+    <string name="sign_up_btn_send_sms_code_no">验证码不正确</string>
+
+    <string name="sign_up_et_image_code_hint">请输入图形码</string>
+    <string name="sign_up_et_sms_code_hint">请输入短信验证码</string>
+    <string name="sign_up_et_new_password_hint">请输入新密码</string>
+
+    <!-- 修改密码 start -->
+    <string name="update_pwd">修改密码</string>
+    <string name="update_pwd_old_title">旧密码</string>
+    <string name="update_pwd_old_description">请输入旧密码</string>
+    <string name="update_pwd_new_title">新密码</string>
+    <string name="update_pwd_new_description">请输入新密码</string>
+    <string name="update_pwd_update">修改</string>
+    <string name="update_pwd_update_success">修改成功</string>
+    <string name="update_pwd_update_error">修改失败</string>
+    <!-- 修改密码 end -->
+
+    <string name="update_sex">设置性别</string>
+    <string name="sex_1">男</string>
+    <string name="sex_2">女</string>
+    <string name="sex_3">保密</string>
+
+    <!-- 修改昵称 start -->
+    <string name="update_nickname">设置昵称</string>
+    <string name="update_nickname_title">昵称</string>
+    <string name="update_nickname_description">请输入昵称</string>
+    <string name="update_nickname_save">保存</string>
+    <string name="update_nickname_save_success">保存成功</string>
+    <string name="update_nickname_save_error">保存失败</string>
+    <string name="update_nickname_exist">昵称已存在</string>
+    <string name="update_nickname_rule">1&#8211;12个字符，支持中英文、数字、"_"或减号</string>
+    <!-- 修改昵称 end -->
+
+    <!-- 修改真实姓名 start -->
+    <string name="update_real_name">设置真实姓名</string>
+    <string name="update_real_name_title">姓名</string>
+    <string name="update_real_name_description">请输入姓名</string>
+    <string name="update_real_name_length">请输入正确的名字</string>
+    <!-- 修改真实姓名 end -->
+
+    <string name="feedback_edittext_hint">请输入反馈意见</string>
+    <string name="feedback_btn_text">提交</string>
+    <string name="feedback_btn_text_complete">提交成功</string>
+    <string name="feedback_btn_text_failure">提交失败</string>
+    <string name="feedback_content_length_max">反馈内容400字以内</string>
+    <string name="feedback_edittext_action_done">确认</string>
+
+    <string name="listview_2_empty_message">@string/list_data_not</string>
+    <string name="listview_2_loading_message">正在加载</string>
+    <string name="listview_2_error_message">加载失败</string>
+
+    <string name="listview_2_empty_button">轻触重试</string>
+    <string name="listview_2_loading_button">取消</string>
+    <string name="listview_2_error_button">轻触重试</string>
+
+    <string name="find_user_info_loading_prompt">获取我的信息&#8230;</string>
+
+    <string name="register_success_skip_login">注册完成,请登录</string>
+    <string name="register_success_skip_login_loading">注册完成,正在登录...</string>
+
+    <string name="alert_dialog_delete_prompt_title">删除提示</string>
+    <string name="alert_dialog_delete_prompt_content">确定要删除?</string>
+    <string name="alert_dialog_delete_prompt_delete">删除</string>
+    <string name="alert_dialog_delete_prompt_cancel">取消</string>
+
+    <string name="alert_dialog_permission_prompt_title">权限提示</string>
+    <string name="alert_dialog_permission_prompt_content_settings_screen">只能从设置->应用信息->权限中授予</string>
+
+    <string name="alert_dialog_permission_prompt_content_WRITE_EXTERNAL_STORAGE">应用需要赋予访问「存储」的权限(用于:更新版本,更新头像,射覆神猜,商城等)，不开启将无法正常工作！</string>
+    <string name="alert_dialog_permission_prompt_content_settings_screen_WRITE_EXTERNAL_STORAGE">应用需要赋予访问「存储」的权限(用于:更新版本,更新头像,射覆神猜,商城等)，应用信息->权限->存储空间，不开启将无法正常工作！</string>
+
+    <string name="alert_dialog_permission_prompt_content_READ_PHONE_STATE">应用需要赋予访问「手机信息」的权限(用于:账户安全,异地登陆等)。</string>
+    <string name="alert_dialog_permission_prompt_content_settings_screen_READ_PHONE_STATE">应用需要赋予访问「手机信息」的权限(用于:账户安全,异地登陆等)，应用信息->权限->电话。</string>
+
+    <string name="alert_dialog_permission_prompt_content_ACCESS_COARSE_LOCATION">应用需要赋予访问「位置信息」的权限(用于:账户安全,异地登陆等)。</string>
+    <string name="alert_dialog_permission_prompt_content_settings_screen_ACCESS_COARSE_LOCATION">应用需要赋予访问「位置信息」的权限(用于:账户安全,异地登陆等)，应用信息->权限->位置信息。</string>
+
+    <string name="alert_dialog_permission_prompt_request">请求</string>
+
+
+    <string name="copy_to_clipboard_prompt">复制到剪贴板啦！</string>
+
+    <string name="list_not_more_data">没有更多数据啦！</string>
+    <string name="list_refresh_success_data">刷新完成！</string>
+    <string name="list_refresh_failure_data">刷新失败！</string>
+    <string name="list_data_not">没有数据呀!</string>
+    <string name="list_data_loading">正在加载&#8230;</string>
+    <string name="list_data_uploading">正在上传&#8230;</string>
+
+    <string name="cloud_storage_upload_error">云存储上传失败，请重试！</string>
+    <string name="avatar_upload_failure">头像上传失败!</string>
+
+    <string name="alertDialog_userinfo_prompt_title">账号提示</string>
+    <string name="alertDialog_userinfo_prompt_content">您好，您的账号已经被冻结！</string>
+    <string name="alertDialog_userinfo_prompt_out">退出</string>
+
+    <string name="alertDialog_app_prompt_title">账号提示</string>
+    <string name="alertDialog_app_prompt_content">确定要退出当前账号?</string>
+    <string name="alertDialog_app_prompt_logout">退出</string>
+    <string name="alertDialog_app_prompt_cancel">取消</string>
+
+    <string name="title_web_loading">正在加载&#8230;</string>
+
+    <string name="install_immediate">立即安装</string>
+    <string name="install_title">免下载安装</string>
+    <string name="update_cancel">取消</string>
+    <string name="update_exit">退出应用</string>
+    <string name="update_ignore">忽略版本</string>
+    <string name="update_immediate">立即更新</string>
+    <string name="update_title">你有新版本需要更新</string>
+    <string name="update_version_name">版本号</string>
+    <string name="update_download_prompt">下载中&#8230;</string>
+    <string name="update_loading_prompt">正在检查更新中&#8230;</string>
+
+    <!-- photo_choose_dialog.xml -->
+    <string name="photo_choose_dialog_top">图库</string>
+    <string name="photo_choose_dialog_center_1">中间(可以多个)</string>
+    <string name="photo_choose_dialog_bottom">拍照</string>
+    <string name="photo_choose_dialog_cancel">取消</string>
+
+
+    <string name="miui_float_window_snackbar_prompt">没有「悬浮窗」权限,开启权限用于应用操作提示(点击进入设置).</string>
+    <string name="miui_float_window_open_prompt">请在设置->应用程序->权限管理,打开设置相关权限(显示悬浮窗).</string>
+
+    <string name="prompt_application__exit">再按一次「返回键」退出</string>
+
+    <!-- 请检查sd卡! -->
+    <string name="sd_path_null">请检查sd卡！</string>
+    <!-- 失败(服务返回错误)! -->
+    <string name="service_response_error">失败,服务返回错误！</string>
+    <!-- 失败(服务错误,访问不到服务器)! -->
+    <string name="service_defeated_check_up_network">访问不到服务器，请检查网络！</string>
+    <!-- 请求失败,请重试 -->
+    <string name="response_fail_retry">请求失败，请重试！</string>
+
+    <!-- 请检查网络! -->
+    <string name="response_code_networkavailable_bad">网络环境不稳定！</string>
+    <string name="response_code_not_networkavailable_0">请检查网络！</string>
+    <string name="response_code_not_networkavailable_3">连接超时，请重试！</string>
+    <string name="response_code_networkavailable_slow">网络不给力</string>
+
+    <string name="response_code_ok_200">成功</string>
+    <string name="response_code_created_201">创建成功</string>
+    <string name="response_code_no_content_204">没有内容(没有创建)</string>
+    <string name="response_code_unauthorized_401">未授权</string>
+    <string name="response_code_forbidden_403">被禁止,权限不够!</string>
+    <string name="response_code_not_found_404">未找到</string>
+    <!-- 请求错误，请重试！ 405:不允许的方法-->
+    <string name="response_code_method_not_allowed_405">请求错误，请重试！</string>
+    <string name="response_code_unprocessable_entity_422">无法处理的实体</string>
+
+
+    <string name="sign_btn_send_sms">点击获取验证码</string>
+    <string name="sign_btn_send_sms_param">再次获取（%s）</string>
+
+    <!--微信-->
+    <string name="create_order_prompt">创建订单中&#8230;</string>
+    <string name="skip_wx_pay_prompt">跳转微信支付中&#8230;</string>
+    <string name="create_order_prompt_cancel">用户取消</string>
+    <string name="skip_alipay_pay_prompt">跳转支付宝支付中&#8230;</string>
+    <string name="pay_go_prompt">正在处理中&#8230;</string>
+    <string name="pay_wx_no_installed_prompt">您没有安装微信</string>
+    <string name="pay_wx_no_supported_prompt">您当前的微信版本不支持支付,请升级</string>
+    <string name="pay_failure_prompt">支付失败</string>
+
+    <string name="current_version_param">当前版本&#160;V%s</string>
+    <string name="order_price_param"><b>￥%.2f</b></string>
+    <string name="order_pay_price_param">订单金额&#160;<b>￥</b>%.2f</string>
+    <string name="order_pay_number_param">订单编号&#160;%s</string>
+    <string name="order_pay_time_param">创建时间&#160;%s</string>
+    <string name="order_pay_address_info_param">配送信息&#160;%s</string>
+    <string name="registration_phone_param">报名电话&#160;%s</string>
+    <string name="constellation_date_param">生日&#160;&#160;%s</string>
+    <string name="constellation_health_param" formatted="false">\n健康</string>
+    <string name="constellation_love_param" formatted="false">\n桃花</string>
+    <string name="constellation_money_param" formatted="false">\n财运</string>
+</resources>

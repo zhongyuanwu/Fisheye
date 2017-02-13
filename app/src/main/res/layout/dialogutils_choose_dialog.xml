@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <!-- <Button -->
+    <!-- android:id="@+id/photo_center01" -->
+    <!-- style="@style/dialogutils_center" -->
+    <!-- android:text="@string/photo_choose_dialog_center_1" /> -->
+
+    <Button
+        android:id="@+id/photo_top"
+        style="@style/dialogutils_top"
+        android:text="@string/photo_choose_dialog_top" />
+
+    <View style="@style/dialogutils_line" />
+
+    <Button
+        android:id="@+id/photo_bottom"
+        style="@style/dialogutils_bottom"
+        android:text="@string/photo_choose_dialog_bottom" />
+
+    <Button
+        android:id="@+id/photo_cancel"
+        style="@style/dialogutils_cancel"
+        android:text="@string/photo_choose_dialog_cancel" />
+
+</LinearLayout>

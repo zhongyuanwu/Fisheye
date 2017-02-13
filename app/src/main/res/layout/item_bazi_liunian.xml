@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <!--android:dividerPadding="8dp"-->
+    <!--android:divider="@drawable/tab_divider_gray_light"-->
+    <!--android:showDividers="middle"-->
+
+    <TextView
+        android:id="@+id/toolbar_tv_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/theme_black_deep"
+        android:textSize="@dimen/theme_14_text" />
+
+</LinearLayout>

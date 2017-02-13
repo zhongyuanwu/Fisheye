@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp" />
+
+    <TextView
+        android:id="@+id/tv_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/list_data_not"
+        android:textColor="@color/theme_gray_deep"
+        android:textSize="@dimen/theme_14_text"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_update_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        style="@style/fragment_sign_ll_header">
+
+        <TextView
+            android:id="@+id/tv_return"
+            style="@style/fragment_sign_tv_close"
+            android:text="@string/head_layout_left_return_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/wb_tv_title"
+        style="@style/fragment_sign_tv_title"
+        android:text="@string/update_new_phone" />
+
+
+    <EditText
+        android:id="@+id/wb_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/custom_edittext_margin_left_right"
+        android:layout_marginRight="@dimen/custom_edittext_margin_left_right"
+        android:layout_marginTop="@dimen/fragment_sign_in_margin_top_bottom"
+        android:background="@drawable/sign_edittext_bg"
+        android:gravity="center"
+        android:hint="@string/update_new_phone_description"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="6dp"
+        android:singleLine="true"
+        android:textColor="@color/theme_black"
+        android:textColorHint="@color/theme_gray"
+        android:textSize="@dimen/theme_12_small" />
+
+    <LinearLayout
+        android:id="@+id/wb_ll_image_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wb_et_phone"
+        android:layout_marginLeft="@dimen/custom_edittext_margin_left_right"
+        android:layout_marginRight="@dimen/custom_edittext_margin_left_right"
+        android:layout_marginTop="@dimen/fragment_sign_in_margin_top_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/wb_et_image_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/sign_edittext_bg"
+            android:gravity="center"
+            android:hint="@string/sign_up_et_image_code_hint"
+            android:inputType="number"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textColor="@color/theme_black"
+            android:textColorHint="@color/theme_gray"
+            android:textSize="@dimen/theme_12_small" />
+
+        <ImageView
+            android:id="@+id/iv_image_code"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:src="@drawable/default_imag_code" />
+
+    </LinearLayout>
+
+    <com.iyuile.circularprogressbutton.CircularProgressButton
+        android:id="@+id/wb_btn_next_step"
+        style="@style/btn_CircularProgressButton"
+        android:layout_marginBottom="@dimen/fragment_sign_in_margin_top_bottom"
+        android:layout_marginTop="@dimen/fragment_sign_in_margin_top_bottom"
+        custom:cpb_selectorIdle="@color/theme_green"
+        custom:cpb_textComplete="@string/send_verification_code_success"
+        custom:cpb_textError="@string/send_verification_code_error"
+        custom:cpb_textIdle="@string/update_phone_next_step" />
+
+</LinearLayout>

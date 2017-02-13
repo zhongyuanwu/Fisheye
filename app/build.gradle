@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        applicationId "com.iyuile.caelum"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0.0"
+        multiDexEnabled true
+    }
+
+    //签名
+    signingConfigs {
+//        myConfig {
+//            storeFile file("keystore.keystore")      //签名文件
+//            storePassword "123456"
+//            keyAlias "name"
+//            keyPassword "123456"  //签名密码
+//        }
+    }
+
+    allprojects {       //在这里是外部导入文件，然后更改本身文件的属性，这里只改了签名，还可以改其他的
+        afterEvaluate { project ->
+            def propsFile = rootProject.file('C:/Users/WangYao/.android/keystore.properties')
+            def configName = 'myConfig'
+
+            if (propsFile.exists() && android.signingConfigs.hasProperty(configName)) {
+                def props = new Properties()
+                props.load(new FileInputStream(propsFile))
+                android.signingConfigs[configName].storeFile = file(props['storeFile'])
+                android.signingConfigs[configName].storePassword = props['storePassword']
+                android.signingConfigs[configName].keyAlias = props['keyAlias']
+                android.signingConfigs[configName].keyPassword = props['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+//        debug {
+//            //使用release的签名
+//            signingConfig signingConfigs.myConfig
+//            buildConfigField "boolean", "LOG_DEBUG", "true"
+//            minifyEnabled false
+//            zipAlignEnabled true
+//            shrinkResources false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        release {
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            minifyEnabled true
+//            zipAlignEnabled true
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+    }
+
+    //有.so文件,加入sourceSets{}
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+    maven { // this is for realm-db
+        url 'http://oss.jfrog.org/artifactory/oss-snapshot-local'
+    }
+    flatDir {
+        dirs 'libs' //this way we can find the .aar file in libs folder
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0-beta3'
+    compile files('libs/universal-image-loader-1.9.5.jar')
+
+    compile(name: 'pullToRefreshAnimLibrary-release', ext: 'aar')
+    compile(name: 'circular-progress-button-library-release', ext: 'aar')
+    compile(name: 'viewPagerIndicatorLibrary-release', ext: 'aar')
+    compile(name: 'swipeBackLayoutlibaray-release', ext: 'aar')
+    compile(name: 'bannerLibrary-release', ext: 'aar')
+    compile(name: 'pickerLibrary-release', ext: 'aar')
+    compile(name: 'AlertDialogLibrary-release', ext: 'aar')
+    compile(name: 'permissionLibrary-release', ext: 'aar')
+    compile(name: 'updatepluginlib-release', ext: 'aar')
+    //七牛
+    compile(name: 'qiniu-android-sdk-7.3.1', ext: 'aar')
+    compile(name: 'happy-dns-0.2.9', ext: 'aar')
+    compile files('libs/wechat.jar')
+    //  友盟统计
+    compile files('libs/utdid4all-1.0.4.jar')
+    compile files('libs/umeng-analytics-v6.0.7.jar')
+    compile(name: 'DatePickerLibrary-release', ext: 'aar')
+
+    compile 'me.yokeyword:fragmentation:0.9.4'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.0@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.0@aar'
+    compile project(':vitamio2')
+    compile 'com.lzy.net:okgo:+'
+}

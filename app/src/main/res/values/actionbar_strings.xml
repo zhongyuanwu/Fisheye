@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="head_layout_left_return_text">返回</string>
+    <string name="head_layout_left_return_icon">&#xe64e;</string> <!-- return -->
+    <string name="head_layout_left_return_secondary">返回</string>
+
+</resources>

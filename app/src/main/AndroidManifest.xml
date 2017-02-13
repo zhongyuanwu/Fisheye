@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.iyuile.caelum">
+
+    <!--<instrumentation
+        android:name="com.android.test.runner.MultiDexTestRunner"
+        android:targetPackage="com.iyuile.caelum" />-->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 开启网络 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 检查网路 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- SD卡写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/><!--6.0-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/><!--6.0-->
+    <!--在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <!-- 显示系统窗口权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 在 屏幕最顶部显示addview-->
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <!--震动-->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+
+    <!--微信支付-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <!--友盟统计-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:name=".utils.MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+
+        <!--友盟-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="586241495312dd6292001180"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="server"/>
+        <!--微信-->
+        <meta-data
+            android:name="wechat_appid"
+            android:value="wxc7d290dbee3b0022"/>
+
+        <!-- 基类 -->
+        <activity
+            android:name=".activity.BaseActivity"
+            android:label="@string/app_name"/>
+        <!--侧滑关闭-->
+        <activity
+            android:name=".activity.BaseBackSwipeActivity"
+            android:label="@string/app_name"/>
+        <!-- 欢迎页 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.SplashMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+
+                <data
+                    android:host="caelum.iyuile.com"
+                    android:pathPrefix="/openApp"
+                    android:scheme="caelum"/>
+            </intent-filter>
+        </activity>
+        --
+        <!-- 主页面 -->
+        <activity
+            android:name=".SupportMainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity
+            android:name=".activity.ShowVideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme"/>
+        <!-- 必须初始化 -->
+        android:screenOrientation="sensorLandscape" />
+        <!-- 必须初始化 -->
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity
+            android:name=".activity.FunctionActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name=".activity.VideoDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.FindDetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SignInActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--注册-->
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--重置密码-->
+        <activity
+            android:name=".activity.SignResetPwdActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--web-->
+        <activity
+            android:name=".activity.WebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--商城-->
+        <!--商城->分类-->
+        <activity
+            android:name=".activity.MallClassifyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--商城->分类->商品-->
+        <activity
+            android:name=".activity.MallWareListActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--商城->详细-->
+        <activity
+            android:name=".activity.MallWareDetailedActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--购物车-->
+        <activity
+            android:name=".activity.ShoppingCartActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--订单确认-->
+        <activity
+            android:name=".activity.OrderConfirmActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--订单支付-->
+        <activity
+            android:name=".activity.OrderBuyActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--收货地址-->
+        <activity
+            android:name=".activity.ReceiptAddressActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <!--收货地址->新建-->
+        <activity
+            android:name=".activity.ReceiptAddressNewActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activity.UpdateInfoActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"/>
+        <!-- 意见反馈 -->
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"/>
+
+        <!--wx支付完成-->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Translucent"/>
+
+        <receiver android:name=".receiver.WeChatRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
