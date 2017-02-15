@@ -2,7 +2,7 @@ package com.iyuile.caelum.api.download;
 
 import android.os.Looper;
 
-import com.iyuile.caelum.utils.Log;
+import com.iyuile.caelum.util.Log;
 
 import java.io.IOException;
 

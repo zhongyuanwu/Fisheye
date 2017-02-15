@@ -16,8 +16,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.utils.MyApplication;
-import com.iyuile.caelum.utils.PixelUtil;
+import com.iyuile.caelum.util.MyApplication;
+import com.iyuile.caelum.util.PixelUtil;
 
 
 /**

@@ -3,7 +3,7 @@ package com.iyuile.caelum.network;
 
 import com.iyuile.caelum.network.api.EveryDayMoreServiceApi;
 import com.iyuile.caelum.network.api.EveryDayServiceApi;
-import com.iyuile.caelum.utils.MyApplication;
+import com.iyuile.caelum.util.MyApplication;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;

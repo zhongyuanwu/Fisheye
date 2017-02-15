@@ -15,6 +15,7 @@ import me.yokeyword.fragmentation.SupportFragment;
 
 /**
  * Created by k21 on 2017/2/10.
+ * 我的 收藏的视频 评论的信息 我的订单等入口
  */
 
 public class MyFunctionFragment extends SupportFragment {

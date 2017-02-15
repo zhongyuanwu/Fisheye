@@ -17,7 +17,7 @@ import com.iyuile.caelum.adapter.CommonAdapter;
 import com.iyuile.caelum.adapter.ViewHolder;
 import com.iyuile.caelum.model.FindMoreEntity;
 import com.iyuile.caelum.network.HttpAdress;
-import com.iyuile.caelum.utils.JsonParseUtils;
+import com.iyuile.caelum.util.JsonParseUtils;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.cache.CacheMode;
 import com.lzy.okgo.callback.StringCallback;

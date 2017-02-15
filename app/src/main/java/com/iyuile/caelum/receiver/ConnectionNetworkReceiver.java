@@ -8,7 +8,7 @@ import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.utils.MyApplication;
+import com.iyuile.caelum.util.MyApplication;
 import com.iyuile.caelum.view.toast.SuperToast;
 
 

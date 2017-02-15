@@ -23,7 +23,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.utils.MyApplication;
+import com.iyuile.caelum.util.MyApplication;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

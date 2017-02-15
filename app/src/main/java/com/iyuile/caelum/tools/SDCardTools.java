@@ -3,10 +3,10 @@ package com.iyuile.caelum.tools;
 import android.content.Context;
 import android.os.Environment;
 
-import com.iyuile.caelum.utils.OkHttpUtils;
-import com.iyuile.caelum.utils.SDCardUtils;
-import com.iyuile.caelum.utils.SDFileOperate;
-import com.iyuile.caelum.utils.update.MyApplicationUpdateDownloadCB;
+import com.iyuile.caelum.util.OkHttpUtils;
+import com.iyuile.caelum.util.SDCardUtils;
+import com.iyuile.caelum.util.SDFileOperate;
+import com.iyuile.caelum.util.update.MyApplicationUpdateDownloadCB;
 
 import java.io.File;
 

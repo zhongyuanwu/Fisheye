@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
@@ -24,11 +25,11 @@ import com.iyuile.caelum.contants.AppConstants;
 import com.iyuile.caelum.contants.NetworkConstants;
 import com.iyuile.caelum.entity.response.ErrorResponse;
 import com.iyuile.caelum.entity.response.TokenResponse;
-import com.iyuile.caelum.utils.ButtonUtils;
-import com.iyuile.caelum.utils.MIUIUtils;
-import com.iyuile.caelum.utils.MyApplication;
-import com.iyuile.caelum.utils.RetrofitUtils;
-import com.iyuile.caelum.utils.VerifyUtil;
+import com.iyuile.caelum.util.ButtonUtils;
+import com.iyuile.caelum.util.MIUIUtils;
+import com.iyuile.caelum.util.MyApplication;
+import com.iyuile.caelum.util.RetrofitUtils;
+import com.iyuile.caelum.util.VerifyUtil;
 import com.iyuile.caelum.view.CustomEditText;
 import com.iyuile.caelum.view.toast.SuperToast;
 import com.iyuile.circularprogressbutton.CircularProgressButton;
@@ -379,6 +380,7 @@ public class SignInActivity extends BaseActivity implements View.OnClickListener
                                     SuperToast.makeText(SignInActivity.this, errorObject.getMessage(),
                                             SuperToast.Icon.Resource.ERROR,
                                             SuperToast.Background.RED).show();
+                                Log.e("avg","--------------unauthenticated");
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }

@@ -1,33 +1,34 @@
 package com.iyuile.caelum.fragment;
 
 import android.os.Bundle;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
-import android.widget.ListView;
+import android.widget.LinearLayout;
 
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.adapter.OrderAdapter;
+import com.iyuile.caelum.adapter.MyItemDecoration;
+import com.iyuile.caelum.adapter.OrderAllAdapter;
 import com.iyuile.caelum.api.ErrorHandlingCallAdapter;
 import com.iyuile.caelum.api.ResponseHandlerListener;
 import com.iyuile.caelum.api.impl.ApiServiceImpl;
 import com.iyuile.caelum.entity.OrderEntity;
 import com.iyuile.caelum.entity.response.OrdersResponse;
 import com.iyuile.caelum.enums.OrderStatusValue;
-import com.iyuile.caelum.utils.Log;
+import com.iyuile.caelum.util.Log;
+import com.iyuile.caelum.view.EmptyRecyclerView;
 import com.iyuile.caelum.view.ListView2EmptyLayout;
 import com.iyuile.caelum.view.ListView2FooterView;
-import com.iyuile.caelum.view.toast.SuperToast;
-import com.iyuile.pulltorefreshanimlibrary.PullToRefreshBase;
-import com.iyuile.pulltorefreshanimlibrary.PullToRefreshListView;
-import com.nostra13.universalimageloader.core.ImageLoader;
-import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 import com.umeng.analytics.MobclickAgent;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
 import retrofit2.Response;
 
 /**
@@ -36,11 +37,17 @@ import retrofit2.Response;
  * @author WangYao
  */
 public class OrderAllFragment extends BaseLazyFragment implements AbsListView.OnScrollListener {
+    @Bind(R.id.order_refresh)
+    SwipeRefreshLayout orderRefresh;
+    @Bind(R.id.order_recycler)
+    EmptyRecyclerView orderRecycler;
+    @Bind(R.id.empty_view)
+    LinearLayout mEmptyView;
 
-    private PullToRefreshListView listView;
-    private ListView actualListView;
+    //    private PullToRefreshListView listView;
+//    private ListView actualListView;
     private List<OrderEntity> listData = new ArrayList<OrderEntity>();
-    private OrderAdapter mAdapter;
+    private OrderAllAdapter mAdapter;
 
     private ErrorHandlingCallAdapter.MyCall<OrdersResponse> callResponse;
     private OrdersResponse ordersResponse;
@@ -62,6 +69,7 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
             }
         } else {
             rootView = inflater.inflate(R.layout.fragment_order_all, null);
+            ButterKnife.bind(this, rootView);
             initView();
             Log.e(":::全部", "初始化完毕");
             isPrepared = true;// 初始化完成改为true
@@ -75,7 +83,20 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
         if (!isPrepared || !isVisible || isRequestData)
             return;
         Log.e(":::全部", "加载数据");
-        loadingData(1);
+        orderRefresh.post(new Runnable() {
+            @Override
+            public void run() {
+                orderRefresh.setRefreshing(true);
+                loadingData(1);
+            }
+        });
+
+        orderRefresh.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                loadingData(1);
+            }
+        });
     }
 
     @Override
@@ -85,65 +106,72 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
     }
 
     private void initView() {
-        listView = (PullToRefreshListView) rootView.findViewById(R.id.list_view_order_all);
-        actualListView = listView.getRefreshableView();
+        orderRefresh.setColorSchemeResources(R.color.colorPrimary);
+        mAdapter = new OrderAllAdapter(_mActivity, listData);
+        orderRecycler.setLayoutManager(new LinearLayoutManager(_mActivity));
+        orderRecycler.addItemDecoration(new MyItemDecoration());
+        orderRecycler.setEmptyView(mEmptyView);
+        orderRecycler.setAdapter(mAdapter);
+//        listView = (PullToRefreshListView) rootView.findViewById(R.id.list_view_order_all);
+//        actualListView = listView.getRefreshableView();
+//
+//        listEmptyView = new ListView2EmptyLayout(getActivity(), actualListView);
+//        listFooterView = new ListView2FooterView(getActivity());
+//        listEmptyView.setShowErrorButton(true);
+//        listEmptyView.setErrorButtonClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                loadingData(1);
+//            }
+//        });
+//        listEmptyView.setShowEmptyButton(true);
+//        listEmptyView.setEmptyButtonClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                loadingData(1);
+//            }
+//        });
+//
+//        mAdapter = new OrderAdapter(getActivity(), listData);
+//        listView.setAdapter(mAdapter);
+//
+//        listView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
+//            @Override
+//            public void onPullDownToRefresh(PullToRefreshBase<ListView> pullToRefreshBase) {
+//                loadingData(1);
+//            }
+//
+//            @Override
+//            public void onPullUpToRefresh(PullToRefreshBase<ListView> pullToRefreshBase) {
+//                int page = 1;
+//                if (ordersResponse != null)
+//                    page = ordersResponse.getMeta().getPagination().getCurrent_page() + 1;
+//                loadingData(page);
+//            }
+//        });
 
-        listEmptyView = new ListView2EmptyLayout(getActivity(), actualListView);
-        listFooterView = new ListView2FooterView(getActivity());
-        listEmptyView.setShowErrorButton(true);
-        listEmptyView.setErrorButtonClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadingData(1);
-            }
-        });
-        listEmptyView.setShowEmptyButton(true);
-        listEmptyView.setEmptyButtonClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                loadingData(1);
-            }
-        });
+//        第一个参数就是我们的图片加载对象ImageLoader, 第二个是控制是否在滑动过程中暂停加载图片，如果需要暂停传true就行了，第三个参数控制猛的滑动界面的时候图片是否加载,第四个参数监听滑动事件
+//        listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), true, true, this));// 自动加载更多
 
-        mAdapter = new OrderAdapter(getActivity(), listData);
-        listView.setAdapter(mAdapter);
-
-        listView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener2<ListView>() {
-            @Override
-            public void onPullDownToRefresh(PullToRefreshBase<ListView> pullToRefreshBase) {
-                loadingData(1);
-            }
-
-            @Override
-            public void onPullUpToRefresh(PullToRefreshBase<ListView> pullToRefreshBase) {
-                int page = 1;
-                if (ordersResponse != null)
-                    page = ordersResponse.getMeta().getPagination().getCurrent_page() + 1;
-                loadingData(page);
-            }
-        });
-
-        //第一个参数就是我们的图片加载对象ImageLoader, 第二个是控制是否在滑动过程中暂停加载图片，如果需要暂停传true就行了，第三个参数控制猛的滑动界面的时候图片是否加载,第四个参数监听滑动事件
-        listView.setOnScrollListener(new PauseOnScrollListener(ImageLoader.getInstance(), true, true, this));// 自动加载更多
-
-        //懒加载关闭自动加载
+//        懒加载关闭自动加载
 //        listView.setRefreshing(true);// 自动刷新数据自动执行{@link #onPullDownToRefresh(PullToRefreshBase)}
-
-        listView.setOnLastItemVisibleListener(new PullToRefreshBase.OnLastItemVisibleListener() {
-
-            @Override
-            public void onLastItemVisible() {
-                // 到达最后提示
-                if (ordersResponse != null) {
-                    if (ordersResponse.getMeta().getPagination().getTotal() == mAdapter.getCount())
-
-                        SuperToast.makeText(getActivity(), getString(R.string.list_not_more_data),
-                                SuperToast.Icon.Resource.INFO,
-                                SuperToast.Background.BLUE).show();
-                }
-            }
-        });
+//
+//        listView.setOnLastItemVisibleListener(new PullToRefreshBase.OnLastItemVisibleListener() {
+//
+//            @Override
+//            public void onLastItemVisible() {
+//                // 到达最后提示
+//                if (ordersResponse != null) {
+//                    if (ordersResponse.getMeta().getPagination().getTotal() == mAdapter.getCount())
+//
+//                        SuperToast.makeText(getActivity(), getString(R.string.list_not_more_data),
+//                                SuperToast.Icon.Resource.INFO,
+//                                SuperToast.Background.BLUE).show();
+//                }
+//            }
+//        });
     }
+
 
     /**
      * 滚动监听,设置自动加载更多
@@ -154,16 +182,17 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
      * @param totalItemCount
      */
     @Override
-    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount,
+                         int totalItemCount) {
 
         if (ordersResponse != null) {
-            if (ordersResponse.getMeta().getPagination().getTotal() == mAdapter.getCount())
+            if (ordersResponse.getMeta().getPagination().getTotal() == mAdapter.getItemCount())
                 return;
         }
 
         int lastItem = firstVisibleItem + visibleItemCount;
 
-        if (lastItem == mAdapter.getCount()) {
+        if (lastItem == mAdapter.getItemCount()) {
             if (ordersResponse != null && !isListViewRefresh) {
                 int page = ordersResponse.getMeta().getPagination().getCurrent_page() + 1;
                 loadingData(page);
@@ -181,6 +210,7 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
     /**
      * 加载数据和刷新数据
      */
+
     private void loadingData(final int page) {
         isListViewRefresh = true;
 
@@ -189,9 +219,6 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
             @Override
             public void onStart() {
                 super.onStart();
-                listEmptyView.showLoading();
-                if (page != 1)
-                    actualListView.addFooterView(listFooterView);
             }
 
             @Override
@@ -248,10 +275,7 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        isListViewRefresh = false;
-                        listView.onRefreshComplete();
-                        listEmptyView.showEmpty();
-                        actualListView.removeFooterView(listFooterView);
+                        orderRefresh.setRefreshing(false);
                     }
                 });
             }
@@ -264,14 +288,7 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
         });
 
         if (callResponse == null) {//没有网络 或者token
-            listView.post(new Runnable() {
-                @Override
-                public void run() {
-                    isListViewRefresh = false;
-                    listView.onRefreshComplete();// 在异步里调用才起作用
-                    listEmptyView.showError();
-                }
-            });
+            orderRefresh.setRefreshing(false);
         }
 
 //        try {
@@ -291,4 +308,9 @@ public class OrderAllFragment extends BaseLazyFragment implements AbsListView.On
         MobclickAgent.onPageStart("Main_Order_All");
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        ButterKnife.unbind(this);
+    }
 }

@@ -21,9 +21,9 @@ import com.fastaccess.permission.base.PermissionFragmentHelper;
 import com.fastaccess.permission.base.callback.OnPermissionCallback;
 import com.iyuile.alertdialog.AlertDialog;
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.utils.Log;
-import com.iyuile.caelum.utils.MyApplication;
-import com.iyuile.caelum.utils.ScreenUtils;
+import com.iyuile.caelum.util.Log;
+import com.iyuile.caelum.util.MyApplication;
+import com.iyuile.caelum.util.ScreenUtils;
 import com.iyuile.caelum.view.HeaderLayout;
 
 import java.util.ArrayList;

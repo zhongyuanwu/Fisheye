@@ -28,7 +28,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.utils.ScreenUtils;
+import com.iyuile.caelum.util.ScreenUtils;
 
 
 /**

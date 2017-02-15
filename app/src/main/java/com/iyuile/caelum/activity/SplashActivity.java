@@ -21,7 +21,7 @@ import android.widget.Toast;
 import com.iyuile.caelum.BuildConfig;
 import com.iyuile.caelum.R;
 import com.iyuile.caelum.SupportMainActivity;
-import com.iyuile.caelum.utils.MyApplication;
+import com.iyuile.caelum.util.MyApplication;
 import com.umeng.analytics.MobclickAgent;
 
 

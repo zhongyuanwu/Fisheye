@@ -85,7 +85,6 @@ public class DailyFragment extends SupportFragment {
     }
 
     private void showProgressBar(final String url) {
-        mRefreshLayout.setColorSchemeResources(R.color.colorPrimary);
         mRefreshLayout.post(new Runnable() {
 
             @Override

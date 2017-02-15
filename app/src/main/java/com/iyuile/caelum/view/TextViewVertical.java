@@ -16,8 +16,8 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.utils.Log;
-import com.iyuile.caelum.utils.PixelUtil;
+import com.iyuile.caelum.util.Log;
+import com.iyuile.caelum.util.PixelUtil;
 
 /**
  * 垂直文字

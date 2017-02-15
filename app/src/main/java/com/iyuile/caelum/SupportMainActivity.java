@@ -22,8 +22,8 @@ import com.iyuile.caelum.fragment.HotFragment;
 import com.iyuile.caelum.receiver.ConnectionNetworkReceiver;
 import com.iyuile.caelum.receiver.IConnectionNetwork;
 import com.iyuile.caelum.tools.SDCardTools;
-import com.iyuile.caelum.utils.Log;
-import com.iyuile.caelum.utils.update.EnterUpdateCheckCB;
+import com.iyuile.caelum.util.Log;
+import com.iyuile.caelum.util.update.EnterUpdateCheckCB;
 import com.iyuile.caelum.view.BottomBar;
 import com.iyuile.caelum.view.BottomBarTab;
 

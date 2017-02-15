@@ -40,11 +40,11 @@ import com.iyuile.caelum.entity.ItemModelEntity;
 import com.iyuile.caelum.entity.response.ErrorResponse;
 import com.iyuile.caelum.tools.JavaScriptObject;
 import com.iyuile.caelum.tools.SDCardTools;
-import com.iyuile.caelum.utils.ButtonUtils;
-import com.iyuile.caelum.utils.CommonUtils;
-import com.iyuile.caelum.utils.OkHttpUtils;
-import com.iyuile.caelum.utils.PixelUtil;
-import com.iyuile.caelum.utils.RetrofitUtils;
+import com.iyuile.caelum.util.ButtonUtils;
+import com.iyuile.caelum.util.CommonUtils;
+import com.iyuile.caelum.util.OkHttpUtils;
+import com.iyuile.caelum.util.PixelUtil;
+import com.iyuile.caelum.util.RetrofitUtils;
 import com.iyuile.caelum.view.toast.SuperToast;
 import com.umeng.analytics.MobclickAgent;
 

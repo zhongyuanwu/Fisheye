@@ -29,9 +29,9 @@ import android.widget.TextView;
 
 import com.iyuile.caelum.R;
 import com.iyuile.caelum.tools.SDCardTools;
-import com.iyuile.caelum.utils.CommonUtils;
-import com.iyuile.caelum.utils.OkHttpUtils;
-import com.iyuile.caelum.utils.PixelUtil;
+import com.iyuile.caelum.util.CommonUtils;
+import com.iyuile.caelum.util.OkHttpUtils;
+import com.iyuile.caelum.util.PixelUtil;
 import com.umeng.analytics.MobclickAgent;
 
 import okhttp3.Call;

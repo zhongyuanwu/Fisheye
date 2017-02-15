@@ -7,8 +7,8 @@ import android.os.Bundle;
 
 import com.iyuile.caelum.R;
 import com.iyuile.caelum.activity.OrderBuyActivity;
-import com.iyuile.caelum.utils.Log;
-import com.iyuile.caelum.utils.MyApplication;
+import com.iyuile.caelum.util.Log;
+import com.iyuile.caelum.util.MyApplication;
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
 import com.tencent.mm.sdk.modelbase.BaseResp;

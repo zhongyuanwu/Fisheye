@@ -21,7 +21,7 @@ import com.iyuile.caelum.api.ResponseHandlerListener;
 import com.iyuile.caelum.api.impl.ApiServiceImpl;
 import com.iyuile.caelum.entity.ItemEntity;
 import com.iyuile.caelum.entity.response.ItemsResponse;
-import com.iyuile.caelum.utils.NetConnectedUtils;
+import com.iyuile.caelum.util.NetConnectedUtils;
 
 import java.util.ArrayList;
 import java.util.List;

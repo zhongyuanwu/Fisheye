@@ -12,7 +12,7 @@ import android.widget.TextView;
 import com.iyuile.caelum.R;
 import com.iyuile.caelum.activity.MallWareListActivity;
 import com.iyuile.caelum.entity.ItemCatalogEntity;
-import com.iyuile.caelum.utils.MyApplication;
+import com.iyuile.caelum.util.MyApplication;
 import com.nostra13.universalimageloader.core.ImageLoader;
 
 import java.util.List;

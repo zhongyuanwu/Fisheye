@@ -5,9 +5,9 @@ import android.app.Activity;
 import java.util.LinkedList;
 import java.util.List;
 
+
 /**
  * Activity管理器
- *
  * @author WangYao
  * @version 1
  * @Description 用于处理退出程序时可以退出所有的activity，而编写的通用类

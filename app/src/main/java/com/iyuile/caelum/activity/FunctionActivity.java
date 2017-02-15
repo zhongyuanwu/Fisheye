@@ -7,7 +7,9 @@ import com.iyuile.caelum.fragment.MyFunctionFragment;
 
 import me.yokeyword.fragmentation.SupportActivity;
 
-
+/**
+ *
+ */
 public class FunctionActivity extends SupportActivity {
 
     private static final String TAG = "FunctionActivity";

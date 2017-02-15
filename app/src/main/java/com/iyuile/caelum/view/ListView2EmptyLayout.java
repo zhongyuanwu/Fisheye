@@ -27,8 +27,8 @@ public class ListView2EmptyLayout {
     private Animation mLoadingAnimation;
     private AbsListView mListView;
     private int mErrorMessageViewId;
-    private int mEmptyMessageViewId;
     private int mLoadingMessageViewId;
+    private int mEmptyMessageViewId;
     private LayoutInflater mInflater;
     private boolean mViewsAdded;
     private int mLoadingAnimationViewId;

@@ -23,8 +23,8 @@ import com.iyuile.caelum.api.impl.ApiServiceImpl;
 import com.iyuile.caelum.contants.NetworkConstants;
 import com.iyuile.caelum.entity.AddressEntity;
 import com.iyuile.caelum.entity.response.ErrorResponse;
-import com.iyuile.caelum.utils.MyApplication;
-import com.iyuile.caelum.utils.RetrofitUtils;
+import com.iyuile.caelum.util.MyApplication;
+import com.iyuile.caelum.util.RetrofitUtils;
 import com.iyuile.caelum.view.toast.SuperToast;
 import com.nostra13.universalimageloader.core.ImageLoader;
 

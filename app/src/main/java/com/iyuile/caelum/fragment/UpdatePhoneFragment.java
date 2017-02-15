@@ -14,8 +14,8 @@ import android.widget.TextView;
 
 import com.iyuile.caelum.R;
 import com.iyuile.caelum.activity.UpdateInfoActivity;
-import com.iyuile.caelum.utils.ButtonUtils;
-import com.iyuile.caelum.utils.VerifyUtil;
+import com.iyuile.caelum.util.ButtonUtils;
+import com.iyuile.caelum.util.VerifyUtil;
 import com.iyuile.caelum.view.toast.SuperToast;
 import com.iyuile.circularprogressbutton.CircularProgressButton;
 import com.umeng.analytics.MobclickAgent;

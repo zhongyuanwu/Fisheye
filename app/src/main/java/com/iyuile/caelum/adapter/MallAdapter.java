@@ -17,7 +17,7 @@ import com.iyuile.caelum.R;
 import com.iyuile.caelum.activity.MallWareDetailedActivity;
 import com.iyuile.caelum.contants.AppConstants;
 import com.iyuile.caelum.entity.ItemEntity;
-import com.iyuile.caelum.utils.ImageLoadOptions;
+import com.iyuile.caelum.util.ImageLoadOptions;
 import com.iyuile.caelum.view.RoundAngleImageView;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;

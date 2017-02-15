@@ -16,7 +16,7 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 
 import com.iyuile.caelum.R;
-import com.iyuile.caelum.utils.Log;
+import com.iyuile.caelum.util.Log;
 
 /**
  * 圆形头像带阴影
